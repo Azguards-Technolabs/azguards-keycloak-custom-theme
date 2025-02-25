@@ -42,7 +42,6 @@
                     </div>
                     <div class="text-center mt-3">
                       <a href="${url.loginResetCredentialsUrl}" class="text-decoration-none">Forgot Password</a><br>
-                      <a href="${url.registrationUrl}" class="text-decoration-none">Create Account</a>
                     </div>
 
                   </div>
