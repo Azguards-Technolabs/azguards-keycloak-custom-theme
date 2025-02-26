@@ -27,21 +27,19 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          
-          <!-- Success Message (Displayed after form submission) -->
-          <#if message?has_content && message.type == 'success'>
-            <div class="alert alert-success text-center">
-              ✅ Your account has been updated.
-            </div>
-          </#if>
-
           <div class="text-center p-3 rounded bg-success bg-opacity-25 mb-3">
             <h5 class="mb-0">Update Your Password</h5>
           </div>
           <div class="card shadow" style="background-color: #F6F6F6;">
             <div class="card-body">
               <form action="${url.loginAction}" method="post">
-                
+                <#if message?has_content>
+                  <#assign alertClass="alert-success">
+                    <#if message.type=="error">
+                      <#assign alertClass="alert-danger">
+                    </#if>
+                    <div class="alert ${alertClass} text-center"> ${message.summary} </div>
+                </#if>
                 <!-- New Password Field -->
                 <div class="mb-3 position-relative">
                   <label for="password-new" class="form-label">New Password</label>
@@ -52,7 +50,6 @@
                     </button>
                   </div>
                 </div>
-
                 <!-- Confirm Password Field -->
                 <div class="mb-3 position-relative">
                   <label for="password-confirm" class="form-label">Confirm New Password</label>
@@ -63,18 +60,12 @@
                     </button>
                   </div>
                 </div>
-                
                 <!-- Sign out from other devices option -->
                 <div class="form-check mb-3">
                   <input class="form-check-input" type="checkbox" id="logout-sessions" name="logout-sessions">
-                  <label class="form-check-label" for="logout-sessions">
-                    Sign out from all other devices
-                  </label>
+                  <label class="form-check-label" for="logout-sessions"> Sign out from all other devices </label>
                 </div>
-
-                <button type="submit" class="btn btn-primary w-100 rounded-pill">
-                  Update Password
-                </button>
+                <button type="submit" class="btn btn-primary w-100 rounded-pill"> Update Password </button>
               </form>
             </div>
           </div>
@@ -83,5 +74,3 @@
     </div>
   </body>
 </html>
-
-
