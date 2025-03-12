@@ -24,11 +24,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   </head>
   <body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="container">
+  <div class="background-overlay"></div>
+    <div class="container content-container">
       <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="text-center p-3 rounded bg-success bg-opacity-25 mb-3">
-            <h5 class="mb-0">Update Your Password</h5>
+        <div class="col-md-5">
+          <div class="text-center p-3 mb-3">
+            <h5 class="mb-0">Reset <strong>Your Password</strong></h5>
           </div>
           <div class="card shadow" style="background-color: #F6F6F6;">
             <div class="card-body">

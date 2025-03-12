@@ -1,77 +1,89 @@
 body {
-    font-family: 'Arial', sans-serif;
-	background: url('../img/keycloak-bg.png') no-repeat center center fixed;
-    background-size: cover;
-}
-
-label {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #e6f4d7; /* Light green background */
+    z-index: -1;
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  label {
     cursor: not-allowed;
-}
-
-.card {
+  }
+  
+  .card {
     margin: auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     border-color: #5dd65d !important;
-	background-color: #5dd65d !important;
-}
-
-.btn-primary:hover {
-   background-color: #5dd65d !important;
-}
-
-.bg-success.bg-opacity-25 {
+    background-color: #5dd65d !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5dd65d !important;
+  }
+  
+  .bg-success.bg-opacity-25 {
     border-radius: 10px;
     padding: 12px;
-	background-color: #5dd65d !important;
-}
-
-.text-decoration-none {
+    background-color: #5dd65d !important;
+  }
+  
+  .text-decoration-none {
     color: black;
     font-size: 14px;
-}
-
+  }
   
-        .tenant-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            position: relative;
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-        .tenant-card:hover {
-            transform: scale(1.05);
-        }
-        .tenant-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .plan-badge {
-            font-size: 14px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-        .settings-icon {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            color: #888;
-            cursor: pointer;
-        }
-        .settings-icon:hover {
-            color: #000;
-        }
-
+  .tenant-card {
+    background-color: #f8fdf1;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .tenant-card:hover {
+    transform: scale(1.05);
+  }
+  .tenant-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .plan-badge {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .settings-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+  }
+  .settings-icon:hover {
+    color: #000;
+  }
+  

@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="${url.resourcesPath}/css/style.css">
   </head>
   <body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="container">
+  <div class="background-overlay"></div>
+    <div class="container content-container">
       <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="text-center p-3 rounded bg-success bg-opacity-25 mb-3">
+        <div class="col-md-5">
+          <div class="text-center p-3 mb-3">
             <h5 class="mb-0">Please <strong>LOGIN</strong> To Continue </h5>
           </div>
           <div class="card shadow" style="background-color: #F6F6F6;">
