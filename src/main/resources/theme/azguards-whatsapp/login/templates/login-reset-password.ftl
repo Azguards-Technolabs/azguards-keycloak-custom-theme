@@ -13,21 +13,18 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="text-center p-3 mb-3">
-            <h5 class="mb-0">Reset <strong>Your Password</strong>
+            <h5 class="mb-0 header-section">Reset <strong>Your Password</strong>
             </h5>
           </div>
-          <div class="card shadow" style="background-color: #F6F6F6;">
+          <div class="card shadow" style="background-color: #F8FCF4;">
             <div class="card-body">
               <form action="${url.loginAction}" method="post">
                 <div class="mb-3">
-                  <label for="username" class="form-label">Enter Registered Email Address</label>
+                  <label for="username" class="form-label">Enter Email</label>
                   <input type="email" name="username" id="username" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100 rounded-pill"> Send Reset Link </button>
               </form>
-              <p class="mt-3">
-                <a href="${url.loginUrl}">Back to Login</a>
-              </p>
             </div>
           </div>
         </div>

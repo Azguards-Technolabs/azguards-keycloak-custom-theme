@@ -29,9 +29,9 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="text-center p-3 mb-3">
-            <h5 class="mb-0">Reset <strong>Your Password</strong></h5>
+            <h5 class="mb-0 header-section">Reset <strong>Your Password</strong></h5>
           </div>
-          <div class="card shadow" style="background-color: #F6F6F6;">
+          <div class="card shadow" style="background-color: #F8FCF4;">
             <div class="card-body">
               <form action="${url.loginAction}" method="post">
                 <#if message?has_content>

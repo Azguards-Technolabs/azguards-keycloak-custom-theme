@@ -15,9 +15,9 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="text-center p-3 mb-3">
-            <h5 class="mb-0">Please <strong>LOGIN</strong> To Continue </h5>
+            <h5 class="mb-0 header-section">Login to <strong>Agent Account</strong></h5>
           </div>
-          <div class="card shadow" style="background-color: #F6F6F6;">
+          <div class="card shadow" style="background-color: #F8FCF4">
             <div class="card-body">
               <form action="${url.loginAction}" method="post">
                 <#if message?has_content>
@@ -35,13 +35,13 @@
                   <label for="password" class="form-label">Password</label>
                   <input type="password" id="password" name="password" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100 rounded-pill"> LOGIN <i class="fa fa-paper-plane ml-3" aria-hidden="true"></i>
+                <button type="submit" class="btn btn-primary w-100 rounded-pill">LOGIN
                 </button>
               </form>
             </div>
           </div>
           <div class="text-center mt-3">
-            <a href="${url.loginResetCredentialsUrl}" class="text-decoration-none">Forgot Password</a>
+            <a href="${url.loginResetCredentialsUrl}" class="text-custom">Forgot Password</a>
             <br>
           </div>
         </div>

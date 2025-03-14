@@ -1,89 +1,121 @@
 body {
-    font-family: "Arial", sans-serif;
-  }
-  
-  .background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: #e6f4d7; /* Light green background */
-    z-index: -1;
-  }
-  
-  .content-container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  label {
-    cursor: not-allowed;
-  }
-  
-  .card {
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn-primary {
-    border-color: #5dd65d !important;
-    background-color: #5dd65d !important;
-  }
-  
-  .btn-primary:hover {
-    background-color: #5dd65d !important;
-  }
-  
-  .bg-success.bg-opacity-25 {
-    border-radius: 10px;
-    padding: 12px;
-    background-color: #5dd65d !important;
-  }
-  
-  .text-decoration-none {
-    color: black;
-    font-size: 14px;
-  }
-  
-  .tenant-card {
-    background-color: #f8fdf1;
-    border-radius: 12px;
-    padding: 6px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .tenant-card:hover {
-    transform: scale(1.05);
-  }
-  .tenant-logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  .plan-badge {
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 5px;
-  }
-  .settings-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #888;
-    cursor: pointer;
-  }
-  .settings-icon:hover {
-    color: #000;
-  }
-  
+  font-family: "Arial", sans-serif;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #e0f6ca; /* Light green background */
+  z-index: -1; /* Keeps it behind content */
+  box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-section {
+  color: #378379 !important;
+}
+
+/* Ensuring content is on top */
+.content-container {
+  position: relative;
+  z-index: 1; /* Higher than background */
+}
+
+label {
+  color: #686868 !important;
+}
+
+.card {
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  border-color: #59ce72 !important;
+  background-color: #59ce72 !important;
+}
+
+.btn-primary:hover {
+  background-color: #59ce72 !important;
+}
+
+.bg-success.bg-opacity-25 {
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #59ce72 !important;
+}
+
+.text-decoration-none {
+  color: black;
+  font-size: 14px;
+}
+.tenant-container {
+  padding: 8px 12px;
+}
+
+.tenant-card {
+  background-color: #e3e9dd;
+  display: flex;
+  padding: 12px;
+  border: 1px solid #ddd;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  margin: 4px 0px;
+}
+.tenant-card:hover {
+  transform: scale(1.03);
+}
+.tenant-logo {
+  border-radius: 50%;
+  background-color: white;
+  padding: 6px;
+}
+.tenant-logo img {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  object-fit: contain;
+}
+.tenant-info {
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #686868;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.tenant-info .name {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.tenant-info .role {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-control {
+  line-height: 2 !important;
+}
+
+.form-control:focus {
+  border-color: #35897e !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.text-custom {
+  text-decoration: underline;
+  color: #444444 !important; /* Override Bootstrap styles */
+  text-underline-offset: 3px;
+}
