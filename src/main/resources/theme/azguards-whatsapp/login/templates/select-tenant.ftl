@@ -13,7 +13,7 @@
       <div class="row justify-content-center">
         <div class="col-md-5 mb-3">
           <div class="text-center p-3 mb-3">
-            <h5 class="mb-0 header-section">SELECT <strong>Account</strong></h5>
+            <h5 class="mb-0 header-section">Select <strong>Account</strong></h5>
           </div>
           <div class="row">
             <div class="card tenant-container">
