@@ -119,3 +119,41 @@ label {
   color: #444444 !important; /* Override Bootstrap styles */
   text-underline-offset: 3px;
 }
+
+.tenant-checkbox-label {
+  display: block;
+  width: 100%;
+}
+
+.checkbox-right {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #59ce72;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+/* Checked state */
+.checkbox-right:checked {
+  background-color: #59ce72;
+  border-color: #59ce72;
+}
+
+/* Checkmark using ::after */
+.checkbox-right:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
